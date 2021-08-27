@@ -1,0 +1,2258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eKart</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="body">
+
+
+
+  <!-- Modal order1-->
+  <div class="modal fade" id="order1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style=" box-shadow:0px 3px 100px #c3e4df; ">
+        <div class="modal-header"
+          style=" background-color:#313131;  box-shadow:0px 3px 100px #c3e4df; z-index: index 9;">
+          <h5 class="modal-title" id="exampleModalLabel"><img src="log.png" style="width:200px" height="auto"></h5>
+          <h2 style="color: #c3e4df; ">Zyaka</h2>
+        </div>
+        <div class="modal-body" style="background-color: rgb(185, 185, 185);">
+
+          <br><br>
+
+          <div class="container">
+            <div><label for="" style="float:left; color:black;">Quantity</label>
+              <input type="number" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Address</label>
+              <input type="text" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Enter Card Holder Name</label>
+              <input type="text" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Card Number</label>
+              <input type="number" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Expiry Date</label>
+              <input type="month" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">CVV</label>
+              <input type="password" class="inp" name="" id="" style="float:right; width:250px;">
+              <br><br>
+            </div>
+          </div>
+
+          <br><br><br><br>
+
+
+        </div>
+        <div class="modal-footer" style=" background-color:#313131;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Make Payment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal order 2-->
+  <div class="modal fade" id="order2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"
+          style=" background-color:#313131;  box-shadow:0px 3px 100px #c3e4df; z-index: index 9;">
+          <h5 class="modal-title" id="exampleModalLabel"><img src="log.png" style="width:200px" height="auto"></h5>
+          <h2 style="color: #c3e4df; ">Zyaka</h2>
+        </div>
+        <div class="modal-body" style="background-color: rgb(185, 185, 185);">
+
+          <br><br>
+
+          <div class="container">
+            <div><label for="" style="float:left; color:black;">Quantity</label>
+              <input type="number" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Address</label>
+              <input type="text" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Enter Card Holder Name</label>
+              <input type="text" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Card Number</label>
+              <input type="number" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Expiry Date</label>
+              <input type="month" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">CVV</label>
+              <input type="password" class="inp" name="" id="" style="float:right; width:250px;">
+              <br><br>
+            </div>
+          </div>
+
+          <br><br><br><br>
+
+
+        </div>
+        <div class="modal-footer" style=" background-color:#313131;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Make Payment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal order 3-->
+  <div class="modal fade" id="order3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"
+          style=" background-color:#313131;  box-shadow:0px 3px 100px #c3e4df; z-index: index 9;">
+          <h5 class="modal-title" id="exampleModalLabel"><img src="log.png" style="width:200px" height="auto"></h5>
+          <h2 style="color: #c3e4df; ">Zyaka</h2>
+        </div>
+        <div class="modal-body" style="background-color: rgb(185, 185, 185);">
+
+          <br><br>
+
+          <div class="container">
+            <div><label for="" style="float:left; color:black;">Quantity</label>
+              <input type="number" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Address</label>
+              <input type="text" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Enter Card Holder Name</label>
+              <input type="text" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Card Number</label>
+              <input type="number" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Expiry Date</label>
+              <input type="month" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">CVV</label>
+              <input type="password" class="inp" name="" id="" style="float:right; width:250px;">
+              <br><br>
+            </div>
+          </div>
+
+          <br><br><br><br>
+
+
+        </div>
+        <div class="modal-footer" style=" background-color:#313131;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Make Payment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal order 4-->
+  <div class="modal fade" id="order4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"
+          style=" background-color:#313131;  box-shadow:0px 3px 100px #c3e4df; z-index: index 9;">
+          <h5 class="modal-title" id="exampleModalLabel"><img src="log.png" style="width:200px" height="auto"></h5>
+          <h2 style="color: #c3e4df; ">Zyaka</h2>
+        </div>
+        <div class="modal-body" style="background-color: rgb(185, 185, 185);">
+
+          <br><br>
+
+          <div class="container">
+            <div><label for="" style="float:left; color:black;">Quantity</label>
+              <input type="number" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Address</label>
+              <input type="text" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Enter Card Holder Name</label>
+              <input type="text" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Card Number</label>
+              <input type="number" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Expiry Date</label>
+              <input type="month" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">CVV</label>
+              <input type="password" class="inp" name="" id="" style="float:right; width:250px;">
+              <br><br>
+            </div>
+          </div>
+
+          <br><br><br><br>
+
+
+        </div>
+        <div class="modal-footer" style=" background-color:#313131;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Make Payment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal order 5-->
+  <div class="modal fade" id="order5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"
+          style=" background-color:#313131;  box-shadow:0px 3px 100px #c3e4df; z-index: index 9;">
+          <h5 class="modal-title" id="exampleModalLabel"><img src="log.png" style="width:200px" height="auto"></h5>
+          <h2 style="color: #c3e4df; ">Zyaka</h2>
+        </div>
+        <div class="modal-body" style="background-color: rgb(185, 185, 185);">
+
+          <br><br>
+
+          <div class="container">
+            <div><label for="" style="float:left; color:black;">Quantity</label>
+              <input type="number" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Address</label>
+              <input type="text" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Enter Card Holder Name</label>
+              <input type="text" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Card Number</label>
+              <input type="number" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Expiry Date</label>
+              <input type="month" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">CVV</label>
+              <input type="password" class="inp" name="" id="" style="float:right; width:250px;">
+              <br><br>
+            </div>
+          </div>
+
+          <br><br><br><br>
+
+
+        </div>
+        <div class="modal-footer" style=" background-color:#313131;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Make Payment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal order 6-->
+  <div class="modal fade" id="order6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"
+          style=" background-color:#313131;  box-shadow:0px 3px 100px #c3e4df; z-index: index 9;">
+          <h5 class="modal-title" id="exampleModalLabel"><img src="log.png" style="width:200px" height="auto"></h5>
+          <h2 style="color: #c3e4df; ">Zyaka</h2>
+        </div>
+        <div class="modal-body" style="background-color: rgb(185, 185, 185);">
+
+          <br><br>
+
+          <div class="container">
+            <div><label for="" style="float:left; color:black;">Quantity</label>
+              <input type="number" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Address</label>
+              <input type="text" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Enter Card Holder Name</label>
+              <input type="text" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Card Number</label>
+              <input type="number" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Expiry Date</label>
+              <input type="month" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">CVV</label>
+              <input type="password" class="inp" name="" id="" style="float:right; width:250px;">
+              <br><br>
+            </div>
+          </div>
+
+          <br><br><br><br>
+
+
+        </div>
+        <div class="modal-footer" style=" background-color:#313131;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Make Payment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal order 7-->
+  <div class="modal fade" id="order7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"
+          style=" background-color:#313131;  box-shadow:0px 3px 100px #c3e4df; z-index: index 9;">
+          <h5 class="modal-title" id="exampleModalLabel"><img src="log.png" style="width:200px" height="auto"></h5>
+          <h2 style="color: #c3e4df; ">Zyaka</h2>
+        </div>
+        <div class="modal-body" style="background-color: rgb(185, 185, 185);">
+
+          <br><br>
+
+          <div class="container">
+            <div><label for="" style="float:left; color:black;">Quantity</label>
+              <input type="number" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Address</label>
+              <input type="text" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Enter Card Holder Name</label>
+              <input type="text" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Card Number</label>
+              <input type="number" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Expiry Date</label>
+              <input type="month" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">CVV</label>
+              <input type="password" class="inp" name="" id="" style="float:right; width:250px;">
+              <br><br>
+            </div>
+          </div>
+
+          <br><br><br><br>
+
+
+        </div>
+        <div class="modal-footer" style=" background-color:#313131;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Make Payment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal order 8-->
+  <div class="modal fade" id="order8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"
+          style=" background-color:#313131;  box-shadow:0px 3px 100px #c3e4df; z-index: index 9;">
+          <h5 class="modal-title" id="exampleModalLabel"><img src="log.png" style="width:200px" height="auto"></h5>
+          <h2 style="color: #c3e4df; ">Zyaka</h2>
+        </div>
+        <div class="modal-body" style="background-color: rgb(185, 185, 185);">
+
+          <br><br>
+
+          <div class="container">
+            <div><label for="" style="float:left; color:black;">Quantity</label>
+              <input type="number" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Address</label>
+              <input type="text" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Enter Card Holder Name</label>
+              <input type="text" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Card Number</label>
+              <input type="number" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Expiry Date</label>
+              <input type="month" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">CVV</label>
+              <input type="password" class="inp" name="" id="" style="float:right; width:250px;">
+              <br><br>
+            </div>
+          </div>
+
+          <br><br><br><br>
+
+
+        </div>
+        <div class="modal-footer" style=" background-color:#313131;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Make Payment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal order 9-->
+  <div class="modal fade" id="order9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"
+          style=" background-color:#313131;  box-shadow:0px 3px 100px #c3e4df; z-index: index 9;">
+          <h5 class="modal-title" id="exampleModalLabel"><img src="log.png" style="width:200px" height="auto"></h5>
+          <h2 style="color: #c3e4df; ">Zyaka</h2>
+        </div>
+        <div class="modal-body" style="background-color: rgb(185, 185, 185);">
+
+          <br><br>
+
+          <div class="container">
+            <div><label for="" style="float:left; color:black;">Quantity</label>
+              <input type="number" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Address</label>
+              <input type="text" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Enter Card Holder Name</label>
+              <input type="text" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Card Number</label>
+              <input type="number" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">Expiry Date</label>
+              <input type="month" class="inp" style="float:right; width:250px;">
+            </div>
+            <br><br>
+            <div><label for="" style="float:left; color:black;">CVV</label>
+              <input type="password" class="inp" name="" id="" style="float:right; width:250px;">
+              <br><br>
+            </div>
+          </div>
+
+          <br><br><br><br>
+
+
+        </div>
+        <div class="modal-footer" style=" background-color:#313131;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Make Payment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal more1-->
+  <div class="modal fade" id="more1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    style="width: 100%;">
+    <div class="modal-dialog" style="width: 100%;">
+      <div class="modal-content" style="width: 100%;">
+        <div class="modal-header"
+          style=" background-color:#313131;  box-shadow:0px 3px 100px #c3e4df; z-index: index 9;">
+          <h5 class="modal-title" id="exampleModalLabel"><img src="log.png" style="width:200px" height="auto"></h5>
+          <h2 style="color: #c3e4df; ">Zyaka</h2>
+        </div>
+        <div class="modal-body" style="background-color: rgb(185, 185, 185);">
+
+
+          <div class="container">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="modal-footer" style=" background-color:#313131; justify-content: center;">
+          <img src="log.png" style="width:150px" height="80px">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal more 2-->
+  <div class="modal fade" id="more2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"
+          style=" background-color:#313131;  box-shadow:0px 3px 100px #c3e4df; z-index: index 9;">
+          <h5 class="modal-title" id="exampleModalLabel"><img src="log.png" style="width:200px" height="auto"></h5>
+          <h2 style="color: #c3e4df; ">Zyaka</h2>
+        </div>
+        <div class="modal-body" style="background-color: rgb(185, 185, 185);">
+
+
+          <div class="container">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="modal-footer" style=" background-color:#313131; justify-content: center;">
+          <img src="log.png" style="width:150px" height="80px">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal more 3-->
+  <div class="modal fade" id="more3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"
+          style=" background-color:#313131;  box-shadow:0px 3px 100px #c3e4df; z-index: index 9;">
+          <h5 class="modal-title" id="exampleModalLabel"><img src="log.png" style="width:200px" height="auto"></h5>
+          <h2 style="color: #c3e4df; ">Zyaka</h2>
+        </div>
+        <div class="modal-body" style="background-color: rgb(185, 185, 185);">
+
+
+          <div class="container">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="modal-footer" style=" background-color:#313131; justify-content: center;">
+          <img src="log.png" style="width:150px" height="80px">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal more 4-->
+  <div class="modal fade" id="more4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"
+          style=" background-color:#313131;  box-shadow:0px 3px 100px #c3e4df; z-index: index 9;">
+          <h5 class="modal-title" id="exampleModalLabel"><img src="log.png" style="width:200px" height="auto"></h5>
+          <h2 style="color: #c3e4df; ">Zyaka</h2>
+        </div>
+        <div class="modal-body" style="background-color: rgb(185, 185, 185);">
+
+
+          <div class="container">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="modal-footer" style=" background-color:#313131; justify-content: center;">
+          <img src="log.png" style="width:150px" height="80px">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal more 5-->
+  <div class="modal fade" id="more5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"
+          style=" background-color:#313131;  box-shadow:0px 3px 100px #c3e4df; z-index: index 9;">
+          <h5 class="modal-title" id="exampleModalLabel"><img src="log.png" style="width:200px" height="auto"></h5>
+          <h2 style="color: #c3e4df; ">Zyaka</h2>
+        </div>
+        <div class="modal-body" style="background-color: rgb(185, 185, 185);">
+
+
+          <div class="container">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="modal-footer" style=" background-color:#313131; justify-content: center;">
+          <img src="log.png" style="width:150px" height="80px">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal more 6-->
+  <div class="modal fade" id="more6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"
+          style=" background-color:#313131;  box-shadow:0px 3px 100px #c3e4df; z-index: index 9;">
+          <h5 class="modal-title" id="exampleModalLabel"><img src="log.png" style="width:200px" height="auto"></h5>
+          <h2 style="color: #c3e4df; ">Zyaka</h2>
+        </div>
+        <div class="modal-body" style="background-color: rgb(185, 185, 185);">
+
+
+          <div class="container">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="modal-footer" style=" background-color:#313131; justify-content: center;">
+          <img src="log.png" style="width:150px" height="80px">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal more 7-->
+  <div class="modal fade" id="more7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"
+          style=" background-color:#313131;  box-shadow:0px 3px 100px #c3e4df; z-index: index 9;">
+          <h5 class="modal-title" id="exampleModalLabel"><img src="log.png" style="width:200px" height="auto"></h5>
+          <h2 style="color: #c3e4df; ">Zyaka</h2>
+        </div>
+        <div class="modal-body" style="background-color: rgb(185, 185, 185);">
+
+
+          <div class="container">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="modal-footer" style=" background-color:#313131; justify-content: center;">
+          <img src="log.png" style="width:150px" height="80px">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal more 8-->
+  <div class="modal fade" id="more8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"
+          style=" background-color:#313131;  box-shadow:0px 3px 100px #c3e4df; z-index: index 9;">
+          <h5 class="modal-title" id="exampleModalLabel"><img src="log.png" style="width:200px" height="auto"></h5>
+          <h2 style="color: #c3e4df; ">Zyaka</h2>
+        </div>
+        <div class="modal-body" style="background-color: rgb(185, 185, 185);">
+
+
+          <div class="container">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="modal-footer" style=" background-color:#313131; justify-content: center;">
+          <img src="log.png" style="width:150px" height="80px">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal more 9-->
+  <div class="modal fade" id="more9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"
+          style=" background-color:#313131;  box-shadow:0px 3px 100px #c3e4df; z-index: index 9;">
+          <h5 class="modal-title" id="exampleModalLabel"><img src="log.png" style="width:200px" height="auto"></h5>
+          <h2 style="color: #c3e4df; ">Zyaka</h2>
+        </div>
+        <div class="modal-body" style="background-color: rgb(185, 185, 185);">
+
+
+          <div class="container">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(26, 26, 26);">
+                <h5 class="card-title" style="color:#58ada2;">Food Item1</h5>
+                <p class="card-text" style="color: aliceblue;">Some quick example text to build on the card title and
+                  make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="modal-footer" style=" background-color:#313131; justify-content: center;">
+          <img src="log.png" style="width:150px" height="80px">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav started -->
+
+  <div class="container-fluid" style="box-shadow: 0px 3px 40px #254944;">
+    <div class="row" style="box-shadow: 0px 3px 40px #254944;">
+      <div class="col"><img src="log.png" style="width:150px" height="80px"></div>
+      <div class="col">
+        <div class="nav-side">
+          <div><a class="navTag" href="#" target="_blank" rel="noopener noreferrer">About Us</a></div>
+          <div><a class="navTag" href="#">Menu</a></div>
+          <div><a class="navTag" href="#">Services</a></div>
+          <div><a class="navTag" href="#">Contact</a></div>
+          <div><a class="navTag" href="#">LogIn</a></div>
+          <div><a class="navTag" href="#">|</a></div>
+          <div><a class="navTag" href="index.html">zayka</a></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- nav ended -->
+
+
+  <!-- main -->
+
+  <section>
+
+    <!-- banner -->
+    <div class="banner">
+      <pre style="color:rgba(0, 255, 255, 0.493); margin: auto;">zayka</pre>
+      <div class="image">
+        <img src="log.png" width="700px;">
+      </div>
+    </div>
+    <!-- banner ended -->
+    <br><br>
+
+    <div class="container" style="width:80%">
+      <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="true" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+      <h1 style="text-align: center; font-weight: bold; color: rgb(255, 90, 150)">About Us</h1>
+      <br>
+
+
+      <p style="font-family: poppins; text-align: center; color:aliceblue">Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Voluptatibus neque quae eaque sapiente accusamus eligendi nulla aliquid, perspiciatis
+        numquam tempore saepe natus, blanditiis dolore molestiae nemo nihil, in commodi aliquam?</p>
+      <p style="font-family: poppins; text-align: center; color:aliceblue">Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Voluptatem maiores, officiis asperiores, distinctio dicta debitis quidem explicabo
+        illo iste ab nostrum rerum saepe a sapiente nemo repudiandae nobis perspiciatis quae!</p>
+    </div>
+
+
+    <div class="cards" style="width:65%;">
+
+
+      <h3 style="color: rgb(255, 90, 150); text-align:center;">Dessert</h3>
+
+      <p style="text-align:center; color:azure; font-family: poppins;"> A recusandae eaque ex animi quisquam
+        perspiciatis vero
+        accusantium debitis delectus quo dolores nam cumque
+        qui distinctio, dignissimos tempora optio eligendi odit.</p>
+      <br>
+
+      <div class="card-group">
+        <div class="card" style="margin: 5px; border-radius: 10px;">
+          <img src="momo.jpg" class="card-img-top menupic"
+            style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+          <div class="card-body card-color">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+              additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+            <!-- <div><small class="text-muted">50$ only/-</small></div> -->
+            <div class="row">
+              <div class="col" style="border-radius: 10px;">
+                <div class="btnn"><a href="#" target="blank"><button class="btn btn-secondary" type="button"
+                      data-bs-toggle="modal" data-bs-target="#order1">Order</button></a>
+                </div>
+              </div>
+              <div class="col"></div>
+            </div>
+            <div class="btnn exp"><a href="#" target="blank"><button class="btn btn-secondary exp more" type="button"
+                  data-bs-toggle="modal" data-bs-target="#more1">More>></button></a>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="margin: 5px; border-radius: 10px;">
+          <img src="burg.jpg" class="card-img-top menupic"
+            style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+          <div class="card-body card-color">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+              additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+            <!-- <div><small class="text-muted">50$ only/-</small></div> -->
+            <div class="row">
+              <div class="col" style="border-radius: 10px;">
+                <div class="btnn"><a href="#" target="blank"><button class="btn btn-secondary" type="button"
+                      data-bs-toggle="modal" data-bs-target="#order1">Order</button></a>
+                </div>
+              </div>
+              <div class="col"></div>
+            </div>
+            <div class="btnn exp"><a href="#" target="blank"><button class="btn btn-secondary exp more" type="button"
+                  data-bs-toggle="modal" data-bs-target="#more1">More>></button></a>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="margin: 5px; border-radius: 10px;">
+          <img src="samo.jpg" class="card-img-top menupic"
+            style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+          <div class="card-body card-color">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+              additional content. This card has even longer content than the first to show that equal
+              height
+              action.</p>
+          </div>
+          <div class="card-footer" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+            <!-- <div><small class="text-muted">50$ only/-</small></div> -->
+            <div class="row">
+              <div class="col">
+                <div class="btnn"><a href="#" target="blank"><button class="btn btn-secondary" type="button"
+                      data-bs-toggle="modal" data-bs-target="#order3">Order</button></a>
+                </div>
+              </div>
+              <div class="col"></div>
+            </div>
+            <div class="btnn exp"><a href="#" target="blank"><button class="btn btn-secondary exp" type="button"
+                  data-bs-toggle="modal" data-bs-target="#more3">More>></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="cards" style="width:65%;">
+      <h3 style="color: rgb(255, 90, 150); text-align:center;">Dessert</h3>
+
+      <p style="text-align:center; color:azure; font-family: poppins;"> A recusandae eaque ex animi quisquam
+        perspiciatis vero
+        accusantium debitis delectus quo dolores nam cumque
+        qui distinctio, dignissimos tempora optio eligendi odit.</p>
+      <br>
+
+      <div class="card-group">
+        <div class="card" style="margin: 5px; border-radius: 10px;">
+          <img src="noodle.jfif" class="card-img-top menupic"
+            style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+          <div class="card-body card-color">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+              additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+            <div class="row">
+              <div class="col">
+                <div class="btnn"><a href="#" target="blank"><button class="btn btn-secondary" type="button"
+                      data-bs-toggle="modal" data-bs-target="#order4">Order</button></a>
+                </div>
+              </div>
+              <div class="col"></div>
+            </div>
+            <div class="btnn exp"><a href="#" target="blank"><button class="btn btn-secondary exp" type="button"
+                  data-bs-toggle="modal" data-bs-target="#more4">More>></button></a>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="margin: 5px; border-radius: 10px;">
+          <img src="fries.jpg" class="card-img-top menupic"
+            style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+          <div class="card-body card-color">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+              content.
+            </p>
+          </div>
+          <div class="card-footer" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+            <!-- <div><small class="text-muted">50$ only/-</small></div> -->
+            <div class="row">
+              <div class="col">
+                <div class="btnn"><a href="#" target="blank"><button class="btn btn-secondary " type="button"
+                      data-bs-toggle="modal" data-bs-target="#order5">Order</button></a>
+                </div>
+              </div>
+              <div class="col"></div>
+            </div>
+            <div class="btnn exp"><a href="#" target="blank"><button class="btn btn-secondary exp " type="button"
+                  data-bs-toggle="modal" data-bs-target="#more5">More>></button></a>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="margin: 5px; border-radius: 10px;">
+          <img src="idli.webp" class="card-img-top menupic"
+            style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+          <div class="card-body card-color">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+              additional content. This card has even longer content than the first to show that equal
+              height
+              action.</p>
+          </div>
+          <div class="card-footer" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+            <!-- <div><small class="text-muted">50$ only/-</small></div> -->
+            <div class="row">
+              <div class="col">
+                <div class="btnn"><a href="#" target="blank"><button class="btn btn-secondary" type="button"
+                      data-bs-toggle="modal" data-bs-target="#order6">Order</button></a>
+                </div>
+              </div>
+              <div class="col"></div>
+            </div>
+            <div class="btnn exp"><a href="#" target="blank"><button class="btn btn-secondary exp " type="button"
+                  data-bs-toggle="modal" data-bs-target="#more6">More>></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="cards" style="width:65%;">
+      <h3 style="color: rgb(255, 90, 150); text-align:center;">Dessert</h3>
+
+      <p style="text-align:center; color:azure;font-family: poppins;"> A recusandae eaque ex animi quisquam perspiciatis
+        vero
+        accusantium debitis delectus quo dolores nam cumque
+        qui distinctio, dignissimos tempora optio eligendi odit.</p>
+      <br>
+
+      <div class="card-group">
+        <div class="card" style="margin: 5px; border-radius: 10px;">
+          <img src="icee.jpg" class="card-img-top menupic"
+            style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+          <div class="card-body card-color">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+              additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+            <!-- <div><small class="text-muted">50$ only/-</small></div> -->
+            <div class="row">
+              <div class="col">
+                <div class="btnn"><a href="#" target="blank"><button class="btn btn-secondary" type="button"
+                      data-bs-toggle="modal" data-bs-target="#order7">Order</button></a>
+                </div>
+              </div>
+              <div class="col"></div>
+            </div>
+            <div class="btnn exp"><a href="#" target="blank"><button class="btn btn-secondary exp " type="button"
+                  data-bs-toggle="modal" data-bs-target="#more7">More>></button></a>
+            </div>
+
+          </div>
+        </div>
+        <div class="card" style="margin: 5px; border-radius: 10px;">
+          <img src="swt1.png" class="card-img-top menupic"
+            style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+          <div class="card-body card-color">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+              content.
+            </p>
+          </div>
+          <div class="card-footer" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+            <!-- <div><small class="text-muted">50$ only/-</small></div> -->
+
+            <div class="row">
+              <div class="col">
+                <div class="btnn"><a href="#" target="blank"><button class="btn btn-secondary" type="button"
+                      data-bs-toggle="modal" data-bs-target="#order8">Order</button></a>
+                </div>
+              </div>
+              <div class="col"></div>
+            </div>
+            <div class="btnn exp"><a href="#" target="blank"><button class="btn btn-secondary exp" type="button"
+                  data-bs-toggle="modal" data-bs-target="#more8">More>></button></a>
+            </div>
+
+          </div>
+        </div>
+        <div class="card" style="margin: 5px; border-radius: 10px;">
+          <img src="cake.jpg" class="card-img-top menupic"
+            style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+          <div class="card-body card-color">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+              additional content. This card has even longer content than the first to show that equal
+              height
+              action.</p>
+          </div>
+          <div class="card-footer" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+            <!-- <div><small class="text-muted">50$ only/-</small></div> -->
+            <div class="row">
+              <div class="col">
+                <div class="btnn"><a href="#" target="blank"><button class="btn btn-secondary" type="button"
+                      data-bs-toggle="modal" data-bs-target="#order9">Order</button></a>
+                </div>
+              </div>
+              <div class="col"></div>
+            </div>
+            <div class="btnn exp"><a href="#" target="blank"><button class="btn btn-secondary exp " type="button"
+                  data-bs-toggle="modal" data-bs-target="#more9">More>></button></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+
+
+
+
+
+    <!-- experiment -->
+
+
+    <div class="container">
+
+
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2 style="color:#58ada2;">Our Centres</h2>
+            <hr style="color:aliceblue"><br>
+            <div class="row">
+              <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="150" height="150"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                  preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                    dy=".3em">140x140</text>
+                </svg>
+                <br><br>
+
+                <h2 style="color: #58ada2; font-family:poppins;">Centre1</h2>
+                <p style="color:aliceblue; font-family:poppins;">Some representative placeholder content for the three
+                  columns of text below the carousel. This is the first
+                  column.</p>
+                <p><a class="btn btn-secondary" href="#">Get Location »</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="150" height="150"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                  preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                    dy=".3em">140x140</text>
+                </svg>
+                <br><br>
+                <h2 style="color: #58ada2; font-family:poppins;">Heading</h2>
+                <p style="color:aliceblue; font-family:poppins;">Some representative placeholder content for the three
+                  columns of text below the carousel. This is the first
+                  column.</p>
+                <p><a class="btn btn-secondary" href="#">Get Location »</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="150" height="150"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                  preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                    dy=".3em">140x140</text>
+                </svg>
+                <br><br>
+                <h2 style="color: #58ada2; font-family:poppins;">Heading</h2>
+                <p style="color:aliceblue; font-family:poppins;">Some representative placeholder content for the three
+                  columns of text below the carousel. This is the first
+                  column.</p>
+                <p><a class="btn btn-secondary" href="#">Get Location »</a></p>
+              </div><!-- /.col-lg-4 -->
+
+            </div>
+            <br>
+          </div>
+
+          <div class="carousel-item">
+            <h2 style="color:#58ada2;">Our Centres</h2>
+            <hr style="color:aliceblue"><br>
+            <div class="row">
+              <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="150" height="150"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                  preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                    dy=".3em">140x140</text>
+                </svg>
+                <br><br>
+                <h2 style="color: #58ada2; font-family:poppins;">Heading2</h2>
+                <p style="color:aliceblue; font-family:poppins;">Some representative placeholder content for the three
+                  columns of text below the carousel. This is the first
+                  column.</p>
+                <p><a class="btn btn-secondary" href="#">Get Location »</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="150" height="150"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                  preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                    dy=".3em">140x140</text>
+                </svg>
+                <br><br>
+                <h2 style="color: #58ada2; font-family:poppins;">Heading</h2>
+                <p style="color:aliceblue; font-family:poppins;">Some representative placeholder content for the three
+                  columns of text below the carousel. This is the first
+                  column.</p>
+                <p><a class="btn btn-secondary" href="#">Get Location »</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="150" height="150"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                  preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                    dy=".3em">140x140</text>
+                </svg>
+                <br><br>
+                <h2 style="color: #58ada2; font-family:poppins;">Heading</h2>
+                <p style="color:aliceblue ; font-family:poppins;">Some representative placeholder content for the three
+                  columns of text below the carousel. This is the first
+                  column.</p>
+                <p><a class="btn btn-secondary" href="#">Get Location »</a></p>
+              </div><!-- /.col-lg-4 -->
+
+            </div>
+            <br>
+          </div>
+          <div class="carousel-item">
+            <h2 style="color:#58ada2;">Our Centres</h2>
+            <hr style="color:aliceblue"><br>
+            <div class="row">
+              <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="150" height="150"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                  preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                    dy=".3em">140x140</text>
+                </svg>
+                <br><br>
+                <h2 style="color: #58ada2; font-family:poppins;">Heading3</h2>
+                <p style="color:aliceblue; font-family:poppins;">Some representative placeholder content for the three
+                  columns of text below the carousel. This is the first
+                  column.</p>
+                <p><a class="btn btn-secondary" href="#">Get Location »</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="150" height="150"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                  preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                    dy=".3em">140x140</text>
+                </svg>
+                <br><br>
+                <h2 style="color: #58ada2;font-family:poppins;">Heading</h2>
+                <p style="color:aliceblue;font-family:poppins;">Some representative placeholder content for the three
+                  columns of text below the carousel. This is the first
+                  column.</p>
+                <p><a class="btn btn-secondary" href="#">Get Location »</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="150" height="150"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                  preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                    dy=".3em">140x140</text>
+                </svg>
+                <br><br>
+                <h2 style="color: #58ada2;font-family:poppins;">Heading</h2>
+                <p style="color:aliceblue;font-family:poppins;">Some representative placeholder content for the three
+                  columns of text below the carousel. This is the first
+                  column.</p>
+                <p><a class="btn btn-secondary" href="#">Get Location »</a></p>
+              </div><!-- /.col-lg-4 -->
+
+            </div>
+            <br>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    </div>
+
+
+
+    <!-- experiment  end-->
+
+
+    <!-- Home Delivery Options -->
+    <div class="key-container">
+      <h2 style="padding-top: 5%; color:rgb(255, 90, 150) ;"><span>Home Delivery Options</span></h2>
+      <div class="key-img">
+        <img src="service.png" style="width:50%">
+      </div>
+      <div class="key-content">
+        <br>
+        <p style=" color:rgb(241, 223, 200); text-align:center;">To get your meal delivered at your footstep
+          within no time contact your nearest Zayka corner:-</p>
+
+        <ul style="list-style-type: none; color:azure;">
+          <li>BHOOTNATH CENTRE: 0522-5XXX6</li>
+          <li>CHOWK CENTRE:0522-5XXX6</li>
+          <li>INDIRA NAGAR CENTRE:0522-5XXX6</li>
+          <li>HAZRATGANJ CENTRE:0522-5XXX6</li>
+        </ul>
+      </div>
+      <!-- Home Delivery Options End-->
+
+
+    </div>
+
+
+    <!-- <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <h2 style="padding-top: 5%; color:rgb(255, 90, 150) ;">Home Delivery Options</h2>
+                        <div class="key-img">
+                            <img src="service.png" style="width:50%">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <br>
+                        <p style=" color:rgb(255, 90, 150) ; text-align:center;">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Et sed consequatur totam! Facere ad officia, doloribus, iure ab dolore nesciunt
+                            provident nihil consequuntur adipisci temporibus porro consectetur inventore vel neque.</p>
+        
+                        <ul style="list-style-type: none; padding-top: 5%; color:azure">
+                            <li>Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div> -->
+
+
+
+    <br>
+    <hr><br>
+
+
+
+
+  </section>
+
+
+
+
+  <!-- main end -->
+
+  <!-- footer -->
+
+
+  <footer>
+    <div class="container-fluid foot">
+      <hr>
+      <div class="row footimg">
+        <div class="col">
+          <img src="log.png" style="width:150px" height="80px">
+        </div>
+        <div class="col doc">
+          <h3>Documents</h3>
+          <a href="#">FAQ</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="refund.html">Refund Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+        <div class="col follow">
+          <h3>Follow Us</h3>
+
+          <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+          <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
+          <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
+        </div>
+        <div class="col contact">
+          <h3>Contact Us</h3>
+          <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i> Whatsapp: +91 93XXXXXX43</a>
+          <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Phone: +91 9305540143</a>
+          <a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> Tel-no: 0522-5XXX6</a>
+        </div>
+
+      </div>
+      <div class="row">
+        <hr>
+        <p style="text-align:center">Copyright &copy; 2021 Zayka. All rights</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

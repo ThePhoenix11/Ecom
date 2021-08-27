@@ -1,0 +1,251 @@
+.body{
+    background-color:rgb(26, 26, 26);
+   
+}
+
+/* .nav{ 
+    font-family: verdana;
+    font-size: 12 px;
+    background-color: rgb(53, 47, 47);
+    z-index:7;
+    box-shadow:0px 3px 40px #254944
+
+} */
+/* .nav-top{
+    
+    position:relative;
+    right:0;
+    left:0;
+    top:0;
+
+} */
+.nav-side{
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    
+ }
+
+.nav-side a{
+    
+    float: right;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #58ada2;
+
+}
+
+.navTag{
+    margin-right: 10px;
+    
+    
+ }
+.navTag:hover{
+    margin-right:5px;
+    color: rgb(192, 142, 4);
+    transition: all 1s ease;
+ }
+
+
+
+ /* main styling */
+
+
+
+ .banner{
+     background-image: url(fotu.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     /* height: 100vh; */
+     width:100%;
+     height: auto;
+     opacity: 100%;
+     background-attachment : fixed;
+     
+     padding-left: 10%;
+     padding-right: 10%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+
+ }
+
+ .banner pre{
+     
+     font-size: 150px;
+     
+     text-align: center;
+     justify-content: center;
+     font-weight: bolder;
+     
+ }
+
+ .banner div img{
+opacity: 70%;
+ }
+
+ 
+/* 
+ .main p{
+    margin-top: 120px;
+    font-size: 20px;
+
+    text-align: center;
+    color:#044a4d;
+    
+    
+}
+
+ .name{
+     float: right;
+     color: white;
+
+ } */
+
+ /* section */
+
+ section{
+     display: flex;
+     flex-direction: column;
+     justify-content:center;
+     align-items:center;
+    
+ }
+
+.container{
+    width: 60%;
+    justify-content:center;
+    text-align: center;
+
+
+}
+
+/* .key-points{
+    
+    justify-content:center;
+    align-items:center;
+    align-self: center;
+    align-content: center;
+} */
+
+
+.key-container{
+    width: 60%;
+    justify-content:center;
+align-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-radius: 10px;
+}
+/* .key-container .key-content{
+    width:100%;
+    color:cornsilk;
+    line-height: 26pt;
+    display: flex;
+    justify-content:center;
+align-content: center;
+    text-align: center;
+} */
+
+
+
+
+
+
+/* cards */
+.card-title{
+    color:#58ada2;
+}
+
+.card-text{
+    color: rgb(185, 185, 185);
+}
+
+.card:hover{
+
+    border: 1px solid aqua;
+}
+.card-color{
+    background-color:#313131;
+}
+
+
+.menupic{
+    height: 350px;
+}
+
+.card-footer{
+    display: flex;
+    float: right;
+    align-items: right;
+    align-self: right;
+    align-content:right;
+}
+
+.card-footer .btnn :hover{
+   background-color:rgb(255, 90, 150);
+   color:white;
+   
+}
+/* cards ended */
+
+/* section ended */
+
+/* footer */
+
+
+.foot{
+    background-color: rgb(53, 47, 47);
+    color:#58ada2;
+}
+.doc{
+    display: flex;
+    flex-direction: column;
+}
+.doc a{
+   text-decoration: none;
+   color:rgb(241, 223, 200);
+}
+.follow{
+    display: flex;
+    flex-direction: column;
+}
+.follow a{
+    text-decoration: none;
+    color:rgb(241, 223, 200);
+ }
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.contact a{
+    text-decoration: none;
+    color:rgb(241, 223, 200);
+ }
+
+ .exp{
+    position: absolute;
+    right: 0;
+    background-color:rgb(255, 90, 150);
+    margin-right:5px;
+ }
+
+ .card-footer{
+    background-color:rgb(26, 26, 26);
+ }
+
+
+
+ .inp{
+     border:none;
+     height:35px;
+     border-radius: 5px;
+     border-left: 4px solid aqua;
+ }
+
